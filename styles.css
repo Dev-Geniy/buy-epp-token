@@ -1,0 +1,141 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://st4.depositphotos.com/15881914/24791/v/450/depositphotos_247913638-stock-illustration-application-of-smartphone-with-business.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.4); /* Увеличенная прозрачность */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.2s ease-out; /* Плавный переход при наклоне */
+}
+
+h1 {
+    color: #f6851b;
+    font-size: 2em; /* Увеличен размер шрифта */
+    font-family: 'Russo One', sans-serif; /* Стильный шрифт */
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), 0 0 25px rgba(255, 105, 0, 0.7), 0 0 5px rgba(255, 105, 0, 0.7); /* Эффект рамки */
+}
+
+p {
+    font-size: 1.3em; /* Увеличен размер шрифта */
+    margin: 10px 0;
+    color: #444; /* Темнее для лучшего контраста с фоном */
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Мягкая тень */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #f6851b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 10px 0;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e67616;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Кнопка MetaMask с логотипом */
+#connectWallet {
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 10px;
+    width: auto;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+#connectWallet:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+#connectWallet img {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+/* Стили для полей ввода */
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s, transform 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* Статус сообщения */
+#status {
+    font-size: 1.2em;
+    color: #f44336;
+    margin-top: 20px;
+}
+
+#walletAddress {
+    color: #888;
+    font-size: 1.1em;
+}
+
+/* Flexbox для заголовка и кнопки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
